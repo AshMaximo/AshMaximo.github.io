@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!-- Crea un programa que pida al usuario que introduzca una edad y 
+    muestre el siguiente mensaje en función del número introducido:
+     >18: absoluto
+     16-18: juvenil
+     14-15: cadete
+     12-13: infantil
+     10-11: alevín
+     8-9: benjamín
+    Si se introduce un número menor de 8 se mostrará un mensaje al respecto.-->
+    <script>
+        //Pedimos la edad usando prompt
+        let edad = prompt ("Por favor introduce tu edad:");
+        edad = parseInt(edad);
+        //Evaluamos el mensaje y determinamos el mensaje 
+        let mensaje;
+        if (edad > 18) {
+            mensaje = "Equipo absoluto"
+        } else if (edad >= 16 && edad <=18) {
+            mensaje = "Equipo juvenil";
+        } else if (edad >= 14 && edad <=15) {
+            mensaje = "Equipo cadete";
+        } else if (edad >= 12 && edad <=13) {
+            mensaje = "Equipo infantil";
+        } else if (edad >= 10 && edad <=11) {
+            mensaje = "Equipo alevín";
+        } else if (edad >= 8 && edad <=9) {
+            mensaje = "Equipo benjamín";
+        } else if (edad <8) {
+            mensaje = "Es menor de 8, no tiene opcion de equipo";
+        } else {
+            mensaje = "Porfavor introduce una edad";
+        }
+        //Mostraremos el mensaje en alerta
+        alert(mensaje);
+
+    </script>
+</body>
+</html>

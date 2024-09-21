@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Crea un control parental para que no se pueda entrar en una página.
+    Se pedirá al usuario que escriba el apellido del primer presidente español 
+    de la democracia (si no sabes quién fue, busca en Google ;)
+    Mientras el usuario no introduzca la respuesta correcta, el mensaje seguirá saliendo.-->
+    <script>
+        var contraseña = prompt ("Primer apellido del 1er presidente de España");
+        //Creamos un bucle while para si no esta bien, nos diga que lo volvamos a intentar
+         while (contraseña != "Suarez") {
+            //Con esto comprobamos que la entrada por teclado sea Suarez
+          contraseña = prompt ("Incorrecto, vuelvelo a intentar");            
+         }if (contraseña == "Suarez") {
+            alert ("Correcto, Bienvenido/a"); 
+         }
+
+
+    </script>
+</body>
+</html>

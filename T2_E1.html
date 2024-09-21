@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*
+1. Crea un programa en el que muestres el resultado de varias operaciones de comparación mediante alert, 
+   mostrando el texto exacto de la operación realizada y su resultado.
+Ejemplo de resultado:
+La operación 20==20 es true
+Las operaciones a realizar son:
+ 20 == 20
+ 20 === 20
+ 20 === 20.0
+ “Juan” == “juan”
+ “Juan” > “juan”
+ “Juan” < “juan”
+ “123” == 123
+ “123” === 123
+ parseInt(“123”) === 123 //parseint convierte una cadena a un entero
+Comenta el código con los comentarios que estimes necesarios.
+*/
+      var num1 = 20 == 20;
+      alert("La operacion 20==20 es " + num1);
+      num1 = 20 === 20;
+      alert("La operacion 20===20 es " + num1);
+      num1 = 20 === 20.0;
+      alert("La operacion 20 === 20.0 es " + num1);
+      num1 = "Juan" == "juan";
+      alert("La operacion Juan == juan es " + num1);
+      num1 = "Juan" > "juan";
+      alert("La operacion Juan > juan es " + num1);
+      num1 = "Juan" < "juan";
+      alert("La operacion Juan < juan es " + num1);
+      num1 = "123" == 123;
+      alert('La operacion "123" + 123 es ' + num1);
+      num1 = "123" === 123;
+      alert('La operacion "123" === 123 es ' + num1);
+      num1 = parseInt("123") === 123;
+      alert('La operacion parseInt("123") === 123 es ' + num1);
+    </script>
+  </head>
+  <body></body>
+</html>
